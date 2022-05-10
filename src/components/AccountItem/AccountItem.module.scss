@@ -1,0 +1,55 @@
+.wrapper {
+     padding: 9px 16px;
+     cursor: pointer;
+     display: flex;
+     -webkit-box-align: center;
+     align-items: center;
+
+     &:hover {
+          background: rgba(22, 24, 35, 0.03);
+     }
+}
+
+.avatar {
+     width: 40px;
+     height: 40px;
+     border-radius: 500%;
+     -webkit-border-radius: 500%;
+     -moz-border-radius: 500%;
+     -ms-border-radius: 500%;
+     -o-border-radius: 500%;
+     object-fit: cover;
+}
+
+.info {
+     flex: 1;
+     margin-left: 12px;
+     width: calc(100% - 52px);
+}
+
+.name {
+     font-size: 1.6rem;
+     line-height: 22px;
+     font-weight: 600;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+
+.icon {
+     margin-left: 4px;
+     width: 14px;
+     height: 14px;
+     color: rgb(32, 213, 236);
+}
+
+.username {
+     font-size: 1.4rem;
+     line-height: 20px;
+     color: rgba(22, 24, 35, 0.5);
+     font-weight: 400;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     display: block;
+}

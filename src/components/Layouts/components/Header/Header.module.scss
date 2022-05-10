@@ -1,0 +1,111 @@
+.wrapper {
+     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+}
+
+.inner {
+     width: 100%;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-flex-direction: row;
+     -ms-flex-direction: row;
+     flex-direction: row;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     justify-content: space-between;
+     -webkit-align-items: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     padding: 9px 24px 9px 20px;
+}
+
+.logo {
+     font-size: 0;
+}
+
+.form--inner {
+     display: flex;
+     align-items: center;
+     width: 361px;
+     background: rgba(22, 24, 35, 0.06);
+     border-radius: 92px;
+     -webkit-border-radius: 92px;
+     -moz-border-radius: 92px;
+     -ms-border-radius: 92px;
+     -o-border-radius: 92px;
+     border: 1.5px solid transparent;
+
+     &:focus-within {
+          border-color: rgba(22, 24, 35, 0.2);
+     }
+}
+
+.input--search {
+     border: none;
+     caret-color: var(--primary);
+     font-weight: 400;
+     font-size: 1.6rem;
+     line-height: 22px;
+     background: transparent;
+     outline: none;
+     padding: 10.5px 16px;
+     appearance: textfield;
+     flex: 1;
+
+     &:not(:placeholder-shown)~.btn--search {
+          color: rgba(22, 24, 35, 0.75);
+     }
+}
+
+.btn--search {
+     font-size: 1.8rem;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     background: transparent;
+     margin-left: 0;
+     padding: 11px 17px;
+     position: relative;
+     border-top-right-radius: 92px;
+     border-bottom-right-radius: 92px;
+     color: rgba(22, 24, 35, 0.34);
+
+     &::after {
+          content: '';
+          width: 1px;
+          position: absolute;
+          background-color: rgba(22, 24, 35, 0.12);
+          top: 9px;
+          bottom: 9px;
+          left: -1px;
+     }
+
+     &:hover,
+     &:active {
+          background: rgba(22, 24, 35, 0.03);
+     }
+}
+
+.group--icon {
+     margin: 0 12px;
+     color: rgba(22, 24, 35, 0.34);
+     font-size: 1.8rem;
+
+     * {
+          line-height: 1;
+     }
+}
+
+.search-result {
+     width: 361px;
+}
+
+.search-title {
+     padding: 5px 12px;
+     font-size: 14px;
+     line-height: 20px;
+     font-weight: 600;
+     color: rgba(22, 24, 35, 0.5);
+}
