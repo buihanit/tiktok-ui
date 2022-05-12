@@ -1,0 +1,28 @@
+.menu-list{
+    max-width: 224px;
+    .menu-item{
+        margin: 0;
+        width: 100%;
+        justify-content: start;
+        line-height: 22px;
+        padding: 10px 16px;
+        font-weight: 600;
+        border: none;
+        &:hover{
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+.menu-item{
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+    > span:first-child{
+        height: 20px;
+    }
+}
+
+.menu-Popper{
+    padding: 8px 0px;
+}
