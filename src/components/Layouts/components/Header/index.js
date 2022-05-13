@@ -25,6 +25,19 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
+        children: {
+            title: 'language',
+            data: [
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+            ],
+        },
     },
     {
         icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -42,7 +55,7 @@ function Header() {
 
     useEffect(() => {
         setTimeout(() => {
-            setSearchResult([]);
+            setSearchResult([1, 2, 3]);
         }, 0);
     }, []);
 
@@ -75,7 +88,7 @@ function Header() {
                                         <input
                                             type="text"
                                             className={cx('input--search')}
-                                            placeholder="Tìm kiếm tài khoản và video"
+                                            placeholder="Search accounts and videos"
                                             spellCheck={false}
                                         />
                                         <div className={cx('group--icon')}>

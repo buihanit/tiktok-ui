@@ -1,6 +1,7 @@
-.menu-list{
+.menu-list {
     max-width: 224px;
-    .menu-item{
+
+    .menu-item {
         margin: 0;
         width: 100%;
         justify-content: start;
@@ -8,21 +9,58 @@
         padding: 10px 16px;
         font-weight: 600;
         border: none;
-        &:hover{
+
+        &:hover {
             background: rgba(22, 24, 35, 0.03);
         }
     }
 }
-.menu-item{
-    svg{
+
+.menu-item {
+    svg {
         width: 20px;
         height: 20px;
     }
-    > span:first-child{
+
+    >span:first-child {
         height: 20px;
     }
 }
 
-.menu-Popper{
+.menu-Popper {
     padding: 8px 0px;
+}
+
+
+//header menu
+.header-submenu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+
+        margin-left: 28px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
